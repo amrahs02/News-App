@@ -1,6 +1,6 @@
-const API_KEY = "b76448f70a2a4319aa9ecd16c685e12e";
+// const API_KEY = "b76448f70a2a4319aa9ecd16c685e12e";
 // const API_KEY = "1d3a0eefa97b499d8fbc4ee93eeb40b7";
-// const API_KEY = "4dd3cc31455648f090fab24bbd169440";
+const API_KEY = "4dd3cc31455648f090fab24bbd169440";
 const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => fetchNews("Tech"));
