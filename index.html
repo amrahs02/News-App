@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    
+        <!-- <link rel="stylesheet" href="/src/style.css"> -->
+  <link rel="stylesheet" href="/assets/index-dac2d41b.css">
+</head>
+
+<body>
+    <nav class="bg-teal-500 shadow-sm fixed top-0 z-30 flex justify-center items-center left-0 right-0">
+        <div class="main-nav container flex items-center max-w-7xl overflow-hidden justify-evenly p-2">
+            <!-- <a href="#" onclick="reload()" class="logo">
+                <img class="w-32" src="./assets/logo.png" alt="company logo" />
+            </a> -->
+            <div class="nav-links">
+                <ul class="flex items-center gap-4">
+                    <li class="hover-link nav-item cursor-pointer rounded-full px-4 py-2 bg-blue-100 hover:bg-blue-300 active:bg-red-500"
+                        id="ipl" onclick="onNavItemClick('ipl')">
+                        IPL
+                    </li>
+                    <li class="hover-link nav-item cursor-pointer rounded-full px-4 py-2 bg-blue-100 hover:bg-blue-300 active:bg-red-500"
+                        id="india" onclick="onNavItemClick('india')">
+                        India
+                    </li>
+                    <li class="hover-link nav-item cursor-pointer rounded-full px-4 py-2 bg-blue-100 hover:bg-blue-300 active:bg-red-500"
+                        id="world" onclick="onNavItemClick('world')">
+                        World
+                    </li>
+                    <li class="hover-link nav-item cursor-pointer rounded-full px-4 py-2 bg-blue-100 hover:bg-blue-300 active:bg-red-400"
+                        id="tech" onclick="onNavItemClick('tech')">
+                        Tech
+                    </li>
+                    <li class="hover-link nav-item cursor-pointer rounded-full px-4 py-2 bg-blue-100 hover:bg-blue-300 active:bg-red-500"
+                        id="finance" onclick="onNavItemClick('finance')">
+                        Finance
+                    </li>
+                    <li class="hover-link nav-item cursor-pointer rounded-full px-4 py-2 bg-blue-100 hover:bg-blue-300 active:bg-red-500"
+                        id="politics" onclick="onNavItemClick('politics')">
+                        Politics
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar flex items-center h-8 gap-8">
+                <input id="search-text" type="text"
+                    class="news-input w-52 h-full p-4 rounded-full px-4 py-5 border-none bg-blue-200 hover:bg-blue-300 hover:border-none border-blue-50 font-sans"
+                    placeholder="Tech" />
+                <button id="search-button"
+                    class="search-button text-black rounded-full px-4 py-2 bg-blue-200 hover:bg-blue-300 cursor-pointer font-sans">
+                    Search
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="p-5 mt-20 flex justify-center items-center flex-wrap m-5">
+        <div class="cards-container container flex justify-center flex-wrap" id="cards-container">
+        </div>
+    </main>
+    
+    <template id="template-news-card" class="">
+        <div
+        class="m-4 w-96 min-h-full shadow-md rounded-2xl cursor-pointer bg-slate-100 overflow-hidden card hover:shadow-xl p-3">
+        <div class="card-header">
+            <img class="w-full h-44 object-cover rounded-lg" src="https://via.placeholder.com/400x200" alt="news-image"
+            id="news-img" />
+        </div>
+        <div class="card-content p-3 m-5">
+            <h3 id="news-title">This is the Title</h3>
+            <h1 id="news-author">Topic</h1>
+            <!-- <h2 class="news-detail">This is the Content of the News</h2> -->
+            <h6 class="news-source m-3" id="news-source">
+                    End Gadget 26/08/2023
+                </h6>
+                <p class="news-desc" id="news-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                    saepe quis voluptatum quisquam vitae doloremque facilis molestias
+                    quae ratione cumque!
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
+ 
